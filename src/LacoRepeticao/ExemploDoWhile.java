@@ -15,7 +15,6 @@ public class ExemploDoWhile {
 			System.out.printf("A soma dos valores é: %d",a+b);
 			System.out.print("\nPressione 0 para parar: ");			
 			x=num.nextInt();
-			System.out.println(x);
 		}while(x != 0);
 		System.out.println("Programa finalizado");
 	}

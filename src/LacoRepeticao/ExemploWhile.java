@@ -20,7 +20,7 @@ public class ExemploWhile {
 			}
 			else
 			{
-				q=Math.pow(n, 2);
+				q=Math.pow(n,2);
 				System.out.println("O número é impar e seu quadrado é: ");
 				System.out.println(q);
 			}
