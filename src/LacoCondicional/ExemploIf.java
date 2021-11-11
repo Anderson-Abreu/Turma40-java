@@ -5,27 +5,23 @@ import java.util.Scanner;
 public class ExemploIf {
 
 	public static void main(String[] args) {
-		float n1, n2, media;
-		Scanner calc = new Scanner(System.in);
-		System.out.print("Digite a primeira nota: ");
-		n1=calc.nextFloat();
-		System.out.print("Digite a segunda nota: ");
-		n2=calc.nextFloat();
-		media=(n1+n2)/2;
-		System.out.println(media);
-		if (media<5)
-		{
-			System.out.println("reprovado");
-		
-		}
-		else if(media>7)
-		{
-			System.out.println("aprovado");
-		}
-		else
-		{
-			System.out.println("exame");
-		}
+		Scanner scan = new Scanner(System.in);
+	    int idade;
+	    String nome;
+	    
+	    System.out.print("digite sua idade: ");
+	    idade = scan.nextInt();
+	    scan.nextLine();
+	    System.out.print("digite seu nome");
+	    nome = scan.nextLine();
+
+	    if (idade >= 18) {
+	        System.out.println(nome+","+"voce é maior de idade e tem: "+idade+" anos");
+	    } else if (idade >= 1 && idade < 18) {
+	        System.out.println(nome+ ","+ "voce é menor de idade e tem: "+idade+ " anos");
+	    } else {
+	        System.out.println("Voce entrou com um idade invalidade.");
+	    }
 			
 	}
 
