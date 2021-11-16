@@ -11,10 +11,15 @@ public class Exemplo1 {
 		n1=calc.nextInt();
 		n2=calc.nextInt();
 		resp=soma(n1,n2);
-		System.out.println("A soma dos números é: "+ resp);
+		imprime(resp);
 	}
+	
 	public static int soma(int a, int b) {
 		int x = a+b;
 		return x;
+	}
+	
+	public static void imprime(int pumba) {
+		System.out.println("A soma dos números é: "+ pumba );
 	}
 }
